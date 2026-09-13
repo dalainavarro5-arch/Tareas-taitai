@@ -124,6 +124,27 @@ https://www.googleapis.com/auth/drive.file
 
 ---
 
+## ⚠️ Antes del Paso 6: llave de API ≠ cliente OAuth
+
+En **Credenciales** hay tres botones juntos y es fácil equivocarse. Para este
+proyecto necesitas el segundo:
+
+| | 🔑 Clave de API | ✅ ID de cliente de OAuth |
+|---|---|---|
+| Responde a | *¿Qué proyecto pregunta?* | *¿Qué **usuario** pregunta?* |
+| Sirve para | Datos públicos (Maps, traducción) | Datos privados de una persona |
+| Pide permiso al usuario | No | Sí |
+| ¿Nos sirve? | ❌ Da `401` en Classroom | ✅ Es lo que necesitamos |
+
+Classroom y Drive **no tienen datos públicos**: para devolver *tus* tareas, la API
+necesita saber quién eres. Una clave de API no identifica personas, solo proyectos.
+
+> 🔒 Si por error creaste claves de API: bórralas en **Credenciales → Claves de API
+> → ⋮ → Eliminar**. Y nunca pegues una credencial en un chat, correo o repo — si ya
+> pasó, bórrala y genera una nueva.
+
+---
+
 ## Paso 6 — Crear el cliente OAuth
 
 1. Pestaña **Clientes** (*Clients*) → **CREAR CLIENTE**
