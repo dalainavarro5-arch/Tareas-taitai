@@ -19,8 +19,15 @@ redacta — y tú revisas y decides qué entregar.
 
 ## Estado
 
-🔑 **Fase 1** — Autenticación lista, pendiente la primera autorización.
-Ver el plan completo en [PLAN.md](PLAN.md).
+📥 **Fase 2 completa** — autenticación y sincronización funcionando contra
+Classroom real. Siguiente: Fase 4, el triage. Ver [PLAN.md](PLAN.md).
+
+```
+taitai auth        autorizar con Google
+taitai sync        bajar todo a la base local
+taitai pendientes  tus tareas sin entregar, por urgencia
+taitai avisos      últimos avisos de tus profesores
+```
 
 ## Stack
 
