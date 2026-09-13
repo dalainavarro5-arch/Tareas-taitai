@@ -1,0 +1,9 @@
+google-api-python-client>=2.140.0
+google-auth-oauthlib>=1.2.0
+google-auth-httplib2>=0.2.0
+
+# Fijado a propósito: este Mac corre Python 3.9 (el del sistema) y las versiones
+# de cryptography posteriores a la 44 ya no publican binarios para 3.9, así que
+# pip intenta compilarlas desde cero con Rust y falla. Cuando haya un Python
+# más nuevo en la máquina, se puede quitar este tope.
+cryptography==44.0.3

@@ -19,7 +19,8 @@ redacta — y tú revisas y decides qué entregar.
 
 ## Estado
 
-🏗️ **Fase 0** — Cimientos. Ver el plan completo en [PLAN.md](PLAN.md).
+🔑 **Fase 1** — Autenticación lista, pendiente la primera autorización.
+Ver el plan completo en [PLAN.md](PLAN.md).
 
 ## Stack
 
@@ -31,5 +32,21 @@ redacta — y tú revisas y decides qué entregar.
 
 ## Empezar
 
-Todavía no hay código. El siguiente paso es la **Fase 1: OAuth con Google**.
-El plan fase por fase está en [PLAN.md](PLAN.md).
+Necesitas `credentials.json` de Google Cloud — la guía paso a paso está en
+[docs/SETUP-GOOGLE-CLOUD.md](docs/SETUP-GOOGLE-CLOUD.md).
+
+```bash
+python3 -m venv .venv
+./.venv/bin/pip install -r requirements.txt
+./.venv/bin/python -m taitai auth
+```
+
+La primera vez abre el navegador para que autorices. Después guarda el token
+y ya no vuelve a preguntar.
+
+### Nota sobre Python
+
+Este proyecto corre con el Python 3.9 del sistema, que ya está fuera de soporte.
+Por eso `cryptography` está fijado en la 44.0.3 (las versiones nuevas ya no
+publican binarios para 3.9). Funciona bien, pero si algún día instalas un Python
+3.11+, se puede quitar ese tope en `requirements.txt`.
