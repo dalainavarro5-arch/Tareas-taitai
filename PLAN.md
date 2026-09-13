@@ -249,10 +249,18 @@ Quiero que: [objetivo concreto de esta sesión].
 
 ---
 
+# Decisiones tomadas
+
+- ✅ **Fase 1 contra la cuenta escolar directo.** Atacamos el riesgo más grande
+      primero: si el administrador bloquea apps de terceros, nos enteramos antes
+      de construir nada encima.
+- ✅ **Repo público** por ahora. ⚠️ Revisar antes de la Fase 2: a partir de ahí
+      el proyecto maneja info de tus cursos. Los secretos ya están cubiertos por
+      `.gitignore`, pero la base de datos local y los borradores nunca deben
+      commitearse.
+
 # Decisiones abiertas
 
-- [ ] ¿Desarrollamos primero contra la cuenta escolar, o contra un curso de prueba
-      con Gmail personal para no trabarnos en la Fase 1?
-- [ ] ¿El repo debería ser privado? Hoy es público, y a partir de la Fase 2 va a
-      manejar información de tus cursos.
 - [ ] ¿Dashboard web desde la Fase 3, o aguantamos en CLI hasta la Fase 5?
+- [ ] Si la cuenta escolar está bloqueada: ¿pedimos aprobación al admin o nos
+      movemos a un curso de prueba con Gmail personal?
