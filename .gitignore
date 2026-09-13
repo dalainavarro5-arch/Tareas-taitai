@@ -1,0 +1,29 @@
+# --- Secretos: NUNCA subir estos archivos ---
+credentials.json
+client_secret*.json
+token.json
+token.pickle
+.env
+.env.*
+!.env.example
+
+# --- Datos locales ---
+*.db
+*.sqlite
+*.sqlite3
+data/
+drafts/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# --- macOS / editores ---
+.DS_Store
+.vscode/
+.idea/
